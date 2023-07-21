@@ -19,10 +19,14 @@ gem "puma",            "5.6.4"
 gem "bootsnap",        "1.12.0", require: false
 gem "bootstrap-sass",  "3.4.1"
 gem "bcrypt",          "3.1.18"
+gem "faker",           "2.21.0"
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rubocop', require: false
 end
 
 group :development do
